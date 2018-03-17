@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store/index';
-import { getCountries } from './actions/actions-countries';
 import { Router, hashHistory } from 'react-router';
 import routes from './routes';
 
@@ -16,5 +15,3 @@ render(
 );
 
 registerServiceWorker();
-
-store.dispatch(getCountries());
