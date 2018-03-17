@@ -4,7 +4,7 @@ import DevTools from '../DevTools';
 
 const store = createStore(
   reducers,
-  DevTools.instrument()
+  // DevTools.instrument()
 );
 
 export default store;
